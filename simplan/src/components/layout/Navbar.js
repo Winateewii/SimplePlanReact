@@ -12,6 +12,7 @@ const Navbar = () =>{
                 <a href='/' class='brand-logo'>SimplePlan</a>
                 <SignInLink/>
                 <SignOutLink/>
+                
             </div>
             </div>
         </nav>

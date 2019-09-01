@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter } from 'react-router-dom'
+// import './App.css';
+import { BrowserRouter,Switch,Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
-import SignInLink from './components/layout/SignInLink'
+import Dashboard from './components/dashboard/Dashboard'
 
 function App() {
   return (
@@ -11,6 +10,9 @@ function App() {
     <BrowserRouter>
         <div className="App">
           <Navbar />
+          <switch>
+            <Route path='/' component={Dashboard}/>
+          </switch>
         </div>
     </BrowserRouter>
   );
